@@ -1,0 +1,100 @@
+
+<!DOCTYPE html><html id="ng-app">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+
+<title>Awin | Tracking Wizard UI</title>
+<link href="https://www.awin.com/combine.php?css=%3Areset%2Cicons-custom%2CfontAwesome&amp;t=1638751815&amp;ssl" media="screen" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="https://styleguide.awin.com/dist/awin.css" />
+ <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7190776/6563572/css/fonts.css" />
+ <link rel="shortcut icon" href="https://www.awin.com/favicon-awin.ico" type="image/x-icon"/>
+<style>
+    .wizardlist {list-style-type: none; margin: 0;padding: 0;}
+    .wizardlist li {padding:10px 0px 15px 0px;}
+    .wizardlist li img{max-width: 200px;-webkit-filter: grayscale(100%);}
+     .activei{max-width: 200px;-webkit-filter: grayscale(0%) !important;}
+    .wizardlist li img:hover {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;}
+    .vertHR {border-left:1px solid #DBDBDB ;border-right: 0;border-top:0;border-bottom:0px;}
+     .vertHR__hidden {border:none;}
+
+</style>
+</head>
+    <body class="awin">
+    <app-main>
+    <div id="container" class="container-fluid">
+
+
+
+    <!-- body -->
+
+
+
+    <section id="content">
+
+      <div class="boxLtGrey">
+        <div class="container-fluid">
+        <div class="row page-header">
+        <h1>Tracking Wizard</h1>
+        </div>
+        <div class="row">
+        <div class="col-sm-12">
+        <p>Use our tracking wizard to connect your shop and create a test transaction. For further help, please speak to your Awin contact.</p>
+        </div>
+        </div>
+
+      
+       <div class="margin-top-lg">
+       </div>
+        <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+        <div class="row">
+        <div class="col-sm-6">
+        
+          <p>Please choose from the list of common e-commerce market plugins we currently support from the right.
+          If the e-commerce system you use isn’t listed, then please select the last option “other”.</p><p>Please visit the <a href="https://wiki.awin.com/index.php/Awin_Access_Technical_Integration_Guide" rel="external" target="_blank">Awin Technical Integration Wiki</a> for more information.</p>
+        </div>
+        <div class="col-sm-6 vertHR">
+     
+            <ul class="wizardlist">
+              <li><a href="shopifysetup.html" rel="next"><img src="includes/logos/shopify.svg" alt="Shopify" class="activei"></a></li>
+              <li><a href="" rel="next"><img src="includes/logos/woocommerce-logo-vector.svg" alt="WooCommerce"></a> (Coming soon)</li>
+              <li><a href="" rel="next"><img src="includes/logos/magento.svg" alt="Magento"></a> (Coming soon)</li>
+             <li>
+            <p>Other platform plugins will be available soon. 
+            Please refer to the <a href="https://wiki.awin.com/index.php/Awin_Access_Technical_Integration_Guide" target="_blank" title="View the Awin Wiki for more information" rel="external">Awin Wiki</a> for more information.</p>
+          </li>
+             
+        </ul>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- body -->
+
+        </div>
+        <div class="clear"></div>
+      </app-main>
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+ <script>
+    $(window).resize(function() {
+        if ($(window).width() <= 760) {
+            $('.vertHR').addClass('vertHR__hidden')
+        } else {
+            $('.vertHR').removeClass('vertHR__hidden')
+        }
+    });
+</script>
+        
+</body>
+</html>
